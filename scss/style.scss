@@ -667,43 +667,18 @@ $footer-color: #efefef;
         border-color: transparent transparent transparent black;
     }
 
-    a:hover::before{
-        background-color: #f0975c;
+    a:hover::before {
+        border-color: transparent transparent #f09d66 transparent;
     }
 
-    a:hover::after{
-        background-color: #f0975c;
+    a:hover::after {
+        border-color: transparent transparent transparent #f09d66;
+    }
+
+    a:hover{
+        background-color: #f09d66;
     }
 }
-
-
-// .catalog-item:first-child{
-//     a{
-//         background-color: #f0975c;
-//     }
-
-//     a::before{
-//         border-color: transparent transparent #f0975c transparent;
-//     }
-
-//     a::after{
-//         border-color: transparent transparent transparent #f0975c;
-//     }
-// }
-
-// .catalog-item:nth-child(5){
-//     a{
-//         background-color: #f0975c;
-//     }
-
-//     a::before{
-//         border-color: transparent transparent #f0975c transparent;
-//     }
-
-//     a::after{
-//         border-color: transparent transparent transparent #f0975c;
-//     }
-// }
 
 .sales{
     position: absolute;

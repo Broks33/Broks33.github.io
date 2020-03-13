@@ -730,11 +730,15 @@
 }
 
 .catalog-item a:hover::before {
-  background-color: #f0975c;
+  border-color: transparent transparent #f09d66 transparent;
 }
 
 .catalog-item a:hover::after {
-  background-color: #f0975c;
+  border-color: transparent transparent transparent #f09d66;
+}
+
+.catalog-item a:hover {
+  background-color: #f09d66;
 }
 
 .sales {
