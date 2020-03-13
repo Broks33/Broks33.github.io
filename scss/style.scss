@@ -1,4 +1,4 @@
-$header-color: #3b3b3b;
+$header-color: #575757;
 $vintage-color: black;
 $header-font: 'Lato', sans-serif;
 $vintage-font: 'Courgette', cursive;
@@ -24,6 +24,7 @@ $footer-color: #efefef;
     justify-content: space-between;
     align-items: center;
     font-family: $header-font;
+    
     a{
         color: $header-color;
         text-decoration: none;
@@ -35,6 +36,10 @@ $footer-color: #efefef;
     
     a:first-child{
         margin-right: 15px;
+    }
+
+    a:hover{
+        color: blue;
     }
 }
 
@@ -73,6 +78,10 @@ $footer-color: #efefef;
     a{
         text-decoration: none;
         color: $vintage-color;
+    }
+
+    a:hover{
+        text-shadow: 3px 2px 2px rgba(121,121,121,0.55);
     }
 }
 
@@ -167,33 +176,41 @@ $footer-color: #efefef;
     background-repeat: no-repeat;
 }
 
-// .arrows{
-//     color: white;
-//     display: flex;
-//     justify-content: space-between;
-//     position: relative;
-// }
+.left-arrow{
+    position: absolute;
+    left: 20px;
+    margin-top: 270px;
 
+    i{
+        font-size: 60px;
+        color: white;
+        transition: all 0.2s;
+    }
 
-// .left-arrow{
-//     padding-top: 285px;
-//     position: relative;
-//     left: -30px;
+    i:hover{
+        transform: scale(1.2);
+        color: black;
+        transition: all 0.2s;
+    }
+}
 
-//     i{
-//         font-size: 55px;
-//     }
-// }
+.right-arrow{
+    position: absolute;
+    right: 20px;
+    margin-top: 270px;
 
-// .right-arrow{
-//     padding-top: 285px;
-//     position: relative;
-//     right: -30px;
-    
-//     i{
-//         font-size: 55px;
-//     }
-// }
+    i{
+        font-size: 60px;
+        color: white;
+        transition: all 0.2s;
+    }
+
+    i:hover{
+        transform: scale(1.2);
+        color: black;
+        transition: all 0.2s;
+    }
+}
 
 .mid{
     height: 650px;
@@ -550,8 +567,15 @@ $footer-color: #efefef;
         margin: auto;
         transform: rotate(45deg);
         color: #d9bf8f;
-        margin: 0 50px;
+        margin: 52px -161px;
         vertical-align: middle;
+        transition: all 0.5s;
+        position: absolute;
+    }
+
+    i:last-child{
+        position: absolute;
+        margin: 52px 157px;
     }
 
     a::after{
@@ -573,6 +597,14 @@ $footer-color: #efefef;
         bottom: -449px;
         left: 110px;
     }
+
+    a:hover + i{
+        transform: rotate(225deg);
+        transition: all 0.5s;
+        font-size: 16px;
+        color: orange;
+    }
+
 }
 
 .under-main{
@@ -634,35 +666,44 @@ $footer-color: #efefef;
         border-width: 40px 0 0 40px;
         border-color: transparent transparent transparent black;
     }
-}
 
-.catalog-item:first-child{
-    a{
+    a:hover::before{
         background-color: #f0975c;
     }
 
-    a::before{
-        border-color: transparent transparent #f0975c transparent;
-    }
-
-    a::after{
-        border-color: transparent transparent transparent #f0975c;
-    }
-}
-
-.catalog-item:nth-child(5){
-    a{
+    a:hover::after{
         background-color: #f0975c;
     }
-
-    a::before{
-        border-color: transparent transparent #f0975c transparent;
-    }
-
-    a::after{
-        border-color: transparent transparent transparent #f0975c;
-    }
 }
+
+
+// .catalog-item:first-child{
+//     a{
+//         background-color: #f0975c;
+//     }
+
+//     a::before{
+//         border-color: transparent transparent #f0975c transparent;
+//     }
+
+//     a::after{
+//         border-color: transparent transparent transparent #f0975c;
+//     }
+// }
+
+// .catalog-item:nth-child(5){
+//     a{
+//         background-color: #f0975c;
+//     }
+
+//     a::before{
+//         border-color: transparent transparent #f0975c transparent;
+//     }
+
+//     a::after{
+//         border-color: transparent transparent transparent #f0975c;
+//     }
+// }
 
 .sales{
     position: absolute;

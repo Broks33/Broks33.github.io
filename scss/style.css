@@ -25,13 +25,17 @@
 }
 
 .top-header a {
-  color: #3b3b3b;
+  color: #575757;
   text-decoration: none;
   font-size: 12px;
 }
 
 .contact a:first-child {
   margin-right: 15px;
+}
+
+.contact a:hover {
+  color: blue;
 }
 
 .header-menu a {
@@ -72,6 +76,10 @@
 .nav a {
   text-decoration: none;
   color: black;
+}
+
+.nav a:hover {
+  text-shadow: 3px 2px 2px rgba(121, 121, 121, 0.55);
 }
 
 .logo {
@@ -181,6 +189,48 @@
   background-size: cover;
   height: 650px;
   background-repeat: no-repeat;
+}
+
+.left-arrow {
+  position: absolute;
+  left: 20px;
+  margin-top: 270px;
+}
+
+.left-arrow i {
+  font-size: 60px;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.left-arrow i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: black;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 20px;
+  margin-top: 270px;
+}
+
+.right-arrow i {
+  font-size: 60px;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.right-arrow i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: black;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .mid {
@@ -574,8 +624,16 @@
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   color: #d9bf8f;
-  margin: 0 50px;
+  margin: 52px -161px;
   vertical-align: middle;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+}
+
+.summer-collection i:last-child {
+  position: absolute;
+  margin: 52px 157px;
 }
 
 .summer-collection a::after {
@@ -596,6 +654,15 @@
   border-bottom: 1px solid #eaeaea;
   bottom: -449px;
   left: 110px;
+}
+
+.summer-collection a:hover + i {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 16px;
+  color: orange;
 }
 
 .under-main {
@@ -662,28 +729,12 @@
   border-color: transparent transparent transparent black;
 }
 
-.catalog-item:first-child a {
+.catalog-item a:hover::before {
   background-color: #f0975c;
 }
 
-.catalog-item:first-child a::before {
-  border-color: transparent transparent #f0975c transparent;
-}
-
-.catalog-item:first-child a::after {
-  border-color: transparent transparent transparent #f0975c;
-}
-
-.catalog-item:nth-child(5) a {
+.catalog-item a:hover::after {
   background-color: #f0975c;
-}
-
-.catalog-item:nth-child(5) a::before {
-  border-color: transparent transparent #f0975c transparent;
-}
-
-.catalog-item:nth-child(5) a::after {
-  border-color: transparent transparent transparent #f0975c;
 }
 
 .sales {
