@@ -3,126 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flowers</title>
+    <title>freecodecamp5</title>
     <link rel="stylesheet" href="./scss/reset.css">
     <link rel="stylesheet" href="./scss/style.css">
-    <link rel="stylesheet" href="./scss/">
+    <link rel="stylesheet" href="./scss/style.scss">
     <script defer="" src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="crow">
-            <img  src="./images/crow.png" alt="crow">
-        </div>
-        <div class="duty-f">
-            <img  src="./images/dfmd.png" alt="duty-f">
-        </div>
-        <!-- <div class="qp">
-            <img  src="./images/qp.png" alt="qp">
-        </div> -->
-        <div class="head">
-            <div class="logo">
-                <img src="./images/logo.png" alt="logo">
-            </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#goods">Goods</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                    <li><a href="#pay-link">Pay</a></li>
-                </ul>
-            </div>
-        </div>  
+    <div class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
-    <p><a name="home"></a></p>
-    <div class="home">
-        <h1>Hello, it's online virtual flower store</h1>
-        <p>Here you can buy only virtual flowers</p>
-        <p>Only for those who understand!</p>
+    <p><a name="about"></a></p>
+    <div class="meeting">
+        <h1>Hello, I am Max</h1>
+        <p>a web developer</p>
     </div>
-    <p><a name="goods"></a></p>
-    <div class="goods">
-        <div class="grid">
-            <a class="hover-good" href="#paylink" target="_blank">
-                <img src="./images/good1.png" alt="Rose">
+    <p><a name="work"></a></p>
+    <div class="projects">
+        <h2>These are some of my projects</h2>
+        <div class="grid-projects">
+            <a class="forhover" href="https://github.com/Broks33/freeCodeCamp-Survey-Form.git" target="_blank">
+                <img class="projects-image" src="./images/survey-form.png" alt="surveyform">
                 <p>
-                    <span class="code">150 uah</span>
-                    Rose
-                    <span class="code">150 uah</span>
+                    <span class="code"><</span>
+                    Survey Form
+                    <span class="code">/></span>
                 </p>
             </a>
-            <a class="hover-good" href="#paylink" target="_blank">
-                <img src="./images/good2.png" alt="Tulpan">
+            <a class="forhover" href="https://github.com/Broks33/GHW5.git" target="_blank">
+                <img class="projects-image" src="./images/hw5shopmarket.png" alt="shopmarket">
                 <p>
-                    <span class="code">50 uah</span>
-                    Tulpan
-                    <span class="code">50 uah</span>
+                    <span class="code"><</span>
+                    Shophia
+                    <span class="code">/></span>
                 </p>
             </a>
-            <a class="hover-good" href="#paylink" target="_blank">
-                <img src="./images/good3.png" alt="Begonia">
+            <a class="forhover" href="https://github.com/Broks33/hw7.git" target="_blank">
+                <img class="projects-image" src="./images/pingbuller.png" alt="pingbuller-site">
                 <p>
-                    <span class="code">100 uah</span>
-                    Begonia
-                    <span class="code">100 uah</span>
+                    <span class="code"><</span>
+                    PINGBULLER
+                    <span class="code">/></span>
                 </p>
             </a>
-            <a class="hover-good" href="#paylink" target="_blank">
-                <img src="./images/good4.png" alt="Dahlia">
+            <a class="forhover" href="https://github.com/Broks33/Home_work3.git" target="_blank">
+                <img class="projects-image" src="./images/bicycle.png" alt="bicycle">
                 <p>
-                    <span class="code">200 uah</span>
-                    Dahlia
-                    <span class="code">200 uah</span>
+                    <span class="code"><</span>
+                    Fitness
+                    <span class="code">/></span>
                 </p>
             </a>
-            <a class="hover-good" href="#paylink" target="_blank">
-                <img src="./images/good5.png" alt="Hydrangea">
+            <a class="forhover" href="https://github.com/Broks33/fcc-trombone.git" target="_blank">
+                <img class="projects-image" src="./images/trombone.png" alt="trombone">
                 <p>
-                    <span class="code">30 uah</span>
-                    Hydrangea
-                    <span class="code">30 uah</span>
+                    <span class="code"><</span>
+                    Trombone Originals
+                    <span class="code">/></span>
                 </p>
             </a>
-            <a class="hover-good" href="#paylink" target="_blank">
-                <img src="./images/test.png" alt="test">
+            <a class="forhover" href="https://github.com/Broks33/fcc4-Technical-Documentation-Page.git" target="_blank">
+                <img class="projects-image" src="./images/documentation.png" alt="documentation">
                 <p>
-                    <span class="code">10 uah</span>
-                    Test Pay
-                    <span class="code">10 uah</span>
+                    <span class="code"><</span>
+                    Technical Documentation
+                    <span class="code">/></span>
                 </p>
             </a>
         </div>
+        <a href="https://github.com/Broks33?tab=repositories" target="_blank"><button type="submit" id="submit" class="showall">Show all ></button></a>
     </div>
-    <p><a name="contacts"></a></p>
-    <div class="contacts">
+    <p><a name="contact"></a></p>
+    <div class="communication">
         <div class="together">
-            <h2>If you want something</h2>
-            <p>let me know <i class="far fa-smile-wink"></i></p>
+            <h2>Let's work together...</h2>
+            <p>How do you take your coffee?</p>
         </div>
         <div class="soc-link">
             <a href="https://www.facebook.com/profile.php?id=100007377378043" target="_blank">
                 <i class="fab fa-facebook-square"></i>
                 Facebook
             </a>
-            <a href="https://t.me/Broks375" target="_blank">
-                <i class="fab fa-telegram"></i>
-                Telegram
+            <a href="https://github.com/Broks33" target="_blank">
+                <i class="fab fa-github"></i>
+                GitHub
             </a>
             <a href="https://twitter.com/BRoks367" target="_blank">
                 <i class="fab fa-twitter"></i>
                 Twitter
             </a>
-            <a href="https://monobank.ua/r/KUfdcL" target="_blank">
-                Mono
-                <i class="fas fa-cat"></i>
+            <a href="mailto:maxvelikiy3@gmail.com" target="_blank">
+                <i class="fas fa-at"></i>
+                Send a mail
+            </a>
+            <a href="tel:+380968077335" target="_blank">
+                <i class="fas fa-mobile-alt"></i>
+                Call me
             </a>
         </div>
     </div>
     <div class="footer">
-        <div class="wrapper">
-            <p>**This is my first web-site</p>
-            <a href="https://instagram.com/max_velikyy?igshid=1cz5pf46trrrc" target="_blank">© Created for myself</a>
-        </div>
+        <p>**All submitted projects are first in my practice.</p>
+        <p>© Created for freeCodeCamp
+            <i class="fab fa-free-code-camp"></i>
+        </p>
     </div>
 </body>
 </html>
